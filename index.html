@@ -100,6 +100,25 @@
 <footer>
     <p>© 2026 Tasty Bites Restaurant</p>
 </footer>
+<!-- VoiceAgent AI Widget -->
+<script>
+  (function() {
+    var voiceAgentConfig = {
+      agentId: 'agent_ic90gg903mkjnvzag',
+      businessData: {"name":"saravana bhavan","type":"restaurant","data":{"businessName":"saravana bhavan","website":" https://devibharathi-hue.github.io/restaurant-website/","cuisine":"indian","menu":"idly","hours":"9am-11pm","location":"chennai","contact":"+91 9080178992","specialOffers":"not yet"}}
+    };
 
+    var script = document.createElement('script');
+    script.src = 'https://cdn.voiceagent.ai/widget.js';
+    script.async = true;
+    script.onload = function() {
+      if (window.VoiceAgentWidget) {
+        window.VoiceAgentWidget.init(voiceAgentConfig);
+      }
+    };
+    document.head.appendChild(script);
+  })();
+</script>
+<!-- End VoiceAgent AI Widget -->
 </body>
 </html>
